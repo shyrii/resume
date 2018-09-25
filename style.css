@@ -89,6 +89,8 @@ body {
 
 }
 
+
+
 .about-image{
     width:300px;
     height:460px;
@@ -144,4 +146,47 @@ body {
     background-color: yellow;
     height: 2px;
     width: 200px;
+}
+
+.work-wrapper{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background-position: bottom;
+    background-size: cover;
+    padding-top: 1px;
+}
+
+.right{
+    height: 350px;
+    width: calc(100vw - 800px);
+    position: relative;
+    margin-top: 200px;
+    margin-left:700px;
+
+}
+
+.work-image{
+    width:450px;
+    height: 265px;
+    z-index: 1;
+    position: absolute;
+    left: 50px;
+    top: 200px;
+ 
+
+}
+
+.yellow2-image{
+    /* transform: rotate(90deg); */
+    width:550px;
+    height: 250px;
+    position: absolute;
+    /* top:50px;
+    right: 10px; */
+    z-index: 0;
+    margin-top: 300px;
+    margin-left: 0px;
+   
+
 }
