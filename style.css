@@ -107,6 +107,7 @@ body {
     position: relative;
     margin-top: 100px;
     margin-left: 80px;
+    border-top: 1px solid transparent
 }
 
 .line-a {
@@ -189,4 +190,47 @@ body {
     margin-left: 0px;
    
 
+}
+
+.about-me{
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.text-wrapper {
+    margin-top: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 26px;
+    font-size: 20px;
+}
+
+.text1{
+    margin-left: 50px;
+    width: 300px;
+    font-family: "Sitka Display";
+    /* margin-left: 120px; */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.text2{
+    margin-right: 50px;
+    width: 300px;
+    font-family: "Sitka Display";
+    /* margin-left: 450px;s */
+    /* margin-top: 50px; */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.blue { 
+    color: #5A95CC;
 }
