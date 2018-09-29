@@ -1,8 +1,13 @@
+.un,.un:link,.un:visited,.un:hover,.un:active{
+    text-decoration: none;
+    color:inherit;
+}
+
 body {
     margin: 0;
 }
 
-.post-wrapper {
+.home-wrapper {
     width: 100%;
     height: 80vh;
     position: relative;
@@ -54,18 +59,47 @@ body {
 
 }
 
-.navigation-bar{
+ul {
     font-family: Arial;
     text-align: right;
     color:white;
     font-size:18px;
     margin-top:16px;  
     margin-right: 24px;
-}
 
-.navigation-bar > span {
-    display: inline-block;
-    margin: 0px 10px;
+}
+li {
+	float:right;
+	position:relative;
+	padding:10px;
+	line-height:1;
+	transition:0.2s all linear;
+	list-style:none;
+	cursor:pointer;
+}
+li::before {
+	content:"";
+	position:absolute;
+  	top:0;
+	right:100%;
+	width:0;
+	height:100%;
+	border-bottom:3px solid rgb(248,206,134);
+	transition:0.2s all linear;
+}
+li:hover::before {
+	width:100%;
+	top:0;
+	right:0;
+	transition-delay:0.1s;
+	/*过渡延迟*/
+	border-bottom-color:rgb(248,206,134);
+}
+li:hover ~ li::before {
+	right:0;
+}
+li:active {	background:rgb(248,206,134);
+	color:#fff;
 }
 
 .about-wrapper{
@@ -234,3 +268,4 @@ body {
 .blue { 
     color: #5A95CC;
 }
+
