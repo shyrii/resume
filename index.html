@@ -4,143 +4,154 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+    <link href="https://cdnjs.loli.net/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
     <link href="https://fonts.proxy.ustclug.org/css?family=Roboto|Rubik|Raleway" rel="stylesheet">
-    <script src="main.js"></script>
-    
-
 </head>
 
 <body>
-       
-    <div class="home-wrapper">
-        <ul>
-            <a href="#contact"><li>CONTACT</li></a>
-                <a href="#project"><li>PROJECT</li></a>
-                <a href="#experience"><li>EXPERIENCE</li></a>
-                <a href="#about"><li>ABOUT</li></a>
-                <a href="#home"><li>HOME</li></a>
-        </ul>
+    <div id="homeWrapper" class="home-wrapper">
+        <div class="navigation">
+            <ul>
+                <a href="#contact">
+                    <li>CONTACT</li>
+                </a>
+                <a href="#project">
+                    <li>PROJECT</li>
+                </a>
+                <a href="#experience">
+                    <li>EXPERIENCE</li>
+                </a>
+                <a href="#about">
+                    <li>ABOUT</li>
+                </a>
+                <a href="#home" onclick="window.scrollTo(0, 0); now = 0; navigation()">
+                    <li>HOME</li>
+                </a>
+            </ul>
+        </div>
         <div class="author">
-            
-            <div style="width:80px;height:0.5px; background:#003300;"></div>
-            <div style="width:1020px;height:0.5px; background:#003300;margin-left: 540px;"></div>
+            <!-- <div style="width:80px;height:0.5px; background:#003300;"></div>
+            <div style="width:1020px;height:0.5px; background:#003300;margin-left: 540px;"></div> -->
             <img class="author-image" src="./static/images/avatar.jpg" />
-            <div class="name1">Vczh · 陈梓瀚</div>
-            <div class="name2">专业造轮子</div>
-          
+            <div style="margin-left: 20px;">
+                <div class="name1">Vczh · 陈梓瀚</div>
+                <div class="name2">专业造轮子</div>
+            </div>
         </div>
     </div>
     <div id="about" class="about-wrapper ">
-            <div class="about-text" >About</div>
-            <div style="width:429px;height:1px; background-color:#CCCCCC; position: relative;left:22%;margin-top: 20px;"></div>  
-        <img class="about-image animated flipInY delay-4" src="static/images/about.jpeg" />
+        <div class="about-text">About</div>
+        <!-- <div style="width:429px;height:1px; background-color:#CCCCCC; position: relative;left:22%;margin-top: 20px;"></div> -->
+        <img id="aboutImage" class="about-image" src="static/images/about.jpeg" />
         <img class="yellow1-image" src="static/images/yellow.jpg" />
         <div class="left">
             <div class="line-a"></div>
-            <div class="line-b"></div> 
+            <div class="line-b"></div>
             <div class="line-c"></div>
             <div class="line-d"></div>
             <!-- <div style="width:450px;height:0.5px; background:#A1A1A1;margin-left: 180px";margin-top:50px;></div> -->
-           
+
             <div class="text-wrapper">
-                    <p>C++/C#, Working in Microsoft Office Team.</p>
-                    <p>Building code with ❤</p>  
-                    <p>Experienced in Windows plaform development and principle of compiling.</p>  
-                    <p>and principle of compiling.</p>  
-                    <p>Sharing my experience and thought on Zhihu </p>  
-                    <p>and cnblog.</p>  
-                    <p style="color:#C9C9C9">I am also independently developing open source </p>  
-                    <p style="color:#C9C9C9">cross-platform tools and frameworks.</p>  
-            
-            </div> 
+                <div>C++/C#, Working in Microsoft Office Team. Building code with ❤</div>
+                <div>Experienced in Windows plaform development and principle of compiling and principle of compiling.</div>
+                <div>Sharing my experience and thought on Zhihu and cnblog.</div>
+                <div>I am also independently developing open source cross-platform tools and frameworks.</div>
+
+            </div>
         </div>
     </div>
     <div id="experience" class="experience-wrapper">
-            <div class="experience-text" >Experience</div>
-            <div style="width:429px;height:1px; background-color:#CCCCCC; position: relative;left:56%;margin-top: 20px;"></div>  
-        <img class="work-image" src="static/images/work.jpeg" />
+        <!-- <div style="width:429px;height:1px; background-color:#CCCCCC; position: relative;left:56%;margin-top: 20px;"></div> -->
+        <img id="workImage" class="work-image" src="static/images/work.jpeg" />
         <img class="yellow2-image" src="static/images/yellow.jpg" />
         <div class="right">
-                    <div class="line-a"></div>
-                    <div class="line-b"></div>
-                    <div class="line-c"></div>
-                    <div class="line-d"></div>
-           <div class="year">
-               <div>
-                <div>1987<span style="color:#333333;font-size: 18px;padding-left:30px;">I was born, thanks to my parent.</span></div>   
-               </div>
-               <div>
-                <div>2000<span style="color:#333333;font-size: 18px;padding-left:30px;">Wrote my first RPG game in Delphi.</span></div>   
-               </div>
-               <div>
-                <div>2005<span style="color:#333333;font-size: 18px;padding-left:30px;">Created my own Pascal parser using Delphi</span></div>   
-               </div>
-               <div>
-                <div>2008<span style="color:#333333;font-size: 18px;padding-left:30px;">Started GacUI project and joined the Microsoft Shanghai.</span></div>   
-               </div>
-               <div>
-                <div>2011<span style="color:#333333;font-size: 18px;padding-left:30px;">Joined MSRA.</span></div>   
-               </div>
-               <div>
-                <div>2013<span style="color:#333333;font-size: 18px;padding-left:30px;">Joined Microsoft in Redmond, working for Microsoft Office Team.</span></div>   
-               </div>
-           </div>
+            <div class="experience-text">Experience</div>
+            <div class="line-a"></div>
+            <div class="line-b"></div>
+            <div class="line-c"></div>
+            <div class="line-d"></div>
+            <div class="year">
+                <div>
+                    <span class="year-block">1987</span><span class="experience-text-block">I was born, thanks to my
+                        parent.</span>
+                </div>
+                <div>
+                    <span class="year-block">2000</span><span class="experience-text-block">Wrote my first RPG game in
+                        Delphi.</span>
+                </div>
+                <div>
+                    <span class="year-block">2005</span><span class="experience-text-block">Created my own Pascal
+                        parser using Delphi</span>
+                </div>
+                <div>
+                    <span class="year-block">2008</span><span class="experience-text-block">Started GacUI project and
+                        joined the Microsoft Shanghai.</span>
+                </div>
+                <div>
+                    <span class="year-block">2011</span><span class="experience-text-block">Joined MSRA.</span>
+                </div>
+                <div>
+                    <span class="year-block">2013</span><span class="experience-text-block">Joined Microsoft in
+                        Redmond, working for Microsoft Office Team.</span>
+                </div>
+            </div>
 
         </div>
-        <img class="popsicles-img" src="static/images/popsicles.png" /> 
     </div>
 
     <div id="project" class="project-wrapper">
-        <div  class="title-image" >
-           <img style="  width: 192px;height: 82px;"src="static/images/title.png" /> 
+        <img class="popsicles-img" src="static/images/popsicles.png" />
+        <div class="title-image">
+            <img style="width: 192px;height: 82px;" src="static/images/title.png" />
         </div>
-        <div style="width:429px;height:1px; background-color:#CCCCCC; position: relative;left:36%;margin-top: 20px;"></div>  
-       <div class="post-1" >
-            <div class="container1">
-                    <div class="decoration"></div>
-                    <div class="text1">GPU Accelerated C++ User Interface,<br />with WYSIWYG developing tools,<br />XML supports,<br />built-in data binding and MVVM features.</div>
+        <!-- <div style="width:429px;height:1px; background-color:#CCCCCC; position: relative;left:36%;margin-top: 20px;"></div> -->
+        <div class="post">
+            <div style="background-image: url(./static/images/post_1.png)" class="horizon-container">
+                <div class="decoration"></div>
+                <div class="text">GPU Accelerated C++ User Interface,<br />with WYSIWYG developing tools,<br />XML
+                    supports,<br />built-in data binding and MVVM features.</div>
             </div>
-            <div class="container2">
-                    <div class="decoration"></div>
-                    <div class="text2">Database engine<br /> which is either RDBMS<br /> or GraphDB</div>
-           </div>
+            <div style="background-image: url(./static/images/post_2.png)" class="square-container">
+                <div class="decoration"></div>
+                <div class="text">Database engine<br /> which is either RDBMS<br /> or GraphDB</div>
+            </div>
         </div>
 
-       <div class="post-2">
-            <div class="container3">
-                    <div class="decoration"></div>
-                    <div class="text3">Linq for C++11 <br />and STL </div>
+        <div class="post">
+            <div style="background-image: url(./static/images/post_3.png)" class="square-container">
+                <div class="decoration"></div>
+                <div class="text">Linq for C++11 <br />and STL </div>
             </div>
-            <div class="container4">
-                    <div class="decoration"></div>
-                    <div class="text4">English-like dynamic typing <br />programming language</div>
-           </div>
-       </div>
+            <div style="background-image: url(./static/images/post_4.png)" class="horizon-container">
+                <div class="decoration"></div>
+                <div class="text">English-like dynamic typing <br />programming language</div>
+            </div>
+        </div>
     </div>
 
     <div id="contact" class="contact-wrapper">
-            <div class="contact-text" >Contact</div>
-            <div style="width:429px;height:1px; background-color:#CCCCCC; position: relative;left:36%;margin-top: 20px;"></div>  
-         <div class="contact-pic">
-                <a href="https://www.weibo.com/vczh?is_hot=1"><img style="width:98px;height: 98px;" src="static/images/weibo.png" /> </a>
-                <a href="https://www.zhihu.com/people/excited-vczh/activities"><img style="width: 98px;height:98px;" src="static/images/zhihu.png" /> </a>
-                <a href="https://github.com/vczh-libraries"><img style="width:98px;height:98px;" src="static/images/github.png" /> </a>
-                <a href="https://www.cnblogs.com/geniusvczh/"><img style="width:98px;height:98px;" src="static/images/cnblogs.png" /> </a>
-                <a href="vczh@163.com"><img style="width:98px;height:98px;" src="static/images/email.png" /> </a>
-         </div>
-         <div  class="end-img">
-            
-            <img style="width: 180px;float: right;" src="static/images/triangle.png" />
-          
+        <div class="contact-text">Contact</div>
+        <div style="width:429px;height:1px; background-color:#CCCCCC; position: relative;left:36%;margin-top: 20px;"></div>
+        <div class="contact-pic">
+            <a href="https://www.weibo.com/vczh?is_hot=1"><img style="width:98px;height: 98px;" src="static/images/weibo.png" />
+            </a>
+            <a href="https://www.zhihu.com/people/excited-vczh/activities"><img style="width: 98px;height:98px;" src="static/images/zhihu.png" />
+            </a>
+            <a href="https://github.com/vczh-libraries"><img style="width:98px;height:98px;" src="static/images/github.png" />
+            </a>
+            <a href="https://www.cnblogs.com/geniusvczh/"><img style="width:98px;height:98px;" src="static/images/cnblogs.png" />
+            </a>
+            <a href="mailto:vczh@163.com"><img style="width:98px;height:98px;" src="static/images/email.png" /> </a>
         </div>
-        <p class="end-text">©Copyright 2018 Vczh</p>
-       
+        <div class="end-img">
+            <p class="end-text">©Copyright 2018 Vczh</p>
+            <img style="position: absolute; right: 0px; top: 0px; height: 180px;" src="static/images/triangle.png" />
+        </div>
     </div>
-
+    <script src="main.js"></script>
 </body>
 
 </html>
