@@ -88,15 +88,6 @@ p{
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
 }
 
-/* @media (min-width: 600px) { 
-    .author-image {
-        width: 120px;
-        transition: all 0.5s ease;
-        border-radius: 50%;
-       
-    }
-} */
-
 .name1{
     font-family: 'Raleway';
     font-size: 32px;
@@ -555,3 +546,6 @@ li:active {	background:rgb(248,206,134);
     opacity: 1;
 }
 
+.name-wrapper {
+    margin-left: 20px;
+}

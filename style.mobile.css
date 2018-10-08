@@ -1,0 +1,26 @@
+
+@media (max-width: 600px) { 
+    .author {
+        left: 8px;
+    }
+    .author::before, .author::after {
+        display: none;
+    }
+    .author-image {
+        height: 64px;
+        width: 64px;
+        margin-left: 10px;
+    }
+    .name-wrapper {
+        margin-left: 10px;
+    }
+    .name1 {
+        font-size: 22px;
+    }
+    .name2 {
+        font-size: 14px;
+    }
+    .line-a, .line-b, .line-c, .line-d {
+        display: none;
+    }
+}
