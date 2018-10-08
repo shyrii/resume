@@ -364,6 +364,7 @@ li:active {	background:rgb(248,206,134);
     margin-top: 100px;
 }
 .contact-text{
+    position: relative;
     display:flex;
     justify-content:space-around; 
     align-items: center;
@@ -378,7 +379,7 @@ li:active {	background:rgb(248,206,134);
     font-family: 'Roboto';
     position: relative;;
 }
-.about-text::after, .experience-text::after, .title-image::after{
+.about-text::after, .experience-text::after, .title-image::after, .contact-text::after {
     content: ' ';
     position: absolute;
     bottom: -16px;
@@ -390,6 +391,11 @@ li:active {	background:rgb(248,206,134);
 .experience-text::after {
     width: 56%;
     left: 22%;
+}
+
+.contact-text::after {
+    width: 32%;
+    left: 34%;
 }
 
 .title-image::after{
