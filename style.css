@@ -88,15 +88,6 @@ p{
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
 }
 
-/* @media (min-width: 600px) { 
-    .author-image {
-        width: 120px;
-        transition: all 0.5s ease;
-        border-radius: 50%;
-       
-    }
-} */
-
 .name1{
     font-family: 'Raleway';
     font-size: 32px;
@@ -127,7 +118,7 @@ li {
 	position:relative;
 	padding:10px;
 	line-height:1;
-	transition:0.2s all linear;
+	transition:0.2s all ease;
 	list-style:none;
 	cursor:pointer;
 }
@@ -139,7 +130,7 @@ li::before {
 	width:0;
 	height:100%;
 	border-bottom:3px solid rgb(248,206,134);
-	transition:0.2s all linear;
+	transition:0.2s all ease;
 }
 li:hover::before, li.active::before {
 	width:100%;
@@ -373,6 +364,7 @@ li:active {	background:rgb(248,206,134);
     margin-top: 100px;
 }
 .contact-text{
+    position: relative;
     display:flex;
     justify-content:space-around; 
     align-items: center;
@@ -387,7 +379,7 @@ li:active {	background:rgb(248,206,134);
     font-family: 'Roboto';
     position: relative;;
 }
-.about-text::after, .experience-text::after, .title-image::after{
+.about-text::after, .experience-text::after, .title-image::after, .contact-text::after {
     content: ' ';
     position: absolute;
     bottom: -16px;
@@ -399,6 +391,11 @@ li:active {	background:rgb(248,206,134);
 .experience-text::after {
     width: 56%;
     left: 22%;
+}
+
+.contact-text::after {
+    width: 32%;
+    left: 34%;
 }
 
 .title-image::after{
@@ -555,3 +552,6 @@ li:active {	background:rgb(248,206,134);
     opacity: 1;
 }
 
+.name-wrapper {
+    margin-left: 20px;
+}

@@ -12,7 +12,7 @@ window.addEventListener('scroll', (e) => {
     // console.log(screenY)
     if (scrollTop > 0) {
         homeWrapper.classList.add('fixed')
-        if (scrollTop >= screenY * 0.5 && scrollTop < screenY * 1) {
+        if (scrollTop >= screenY * 0.2 && scrollTop < screenY * 1) {
             if (now !== 1) {
                 now = 1
                 navigation()
