@@ -1,6 +1,7 @@
 const homeWrapper = document.getElementById('homeWrapper')
 const aboutImage = document.getElementById('aboutImage')
 const workImage = document.getElementById('workImage')
+const toTop = document.getElementsByClassName('to-top')[0]
 
 const lis = document.getElementsByTagName('li')
 
@@ -51,4 +52,9 @@ const navigation = () => {
         v.classList.remove('active')
     })
     lis[lis.length - 1 - now].classList.add('active')
+    if (now > 0) {
+        toTop.style.display = "flex"
+    } else {
+        toTop.style.display = "none"
+    }
 } 

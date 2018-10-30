@@ -224,4 +224,12 @@
         width: 100vw;
         transform: rotate(45deg) translateX(160vw) translateY(0vw);
     }
+
+    .to-top  {
+        right: 16px;
+        bottom: 16px;
+        font-size: 12px;
+        height: 64px;
+        width: 64px;
+    }
 }
